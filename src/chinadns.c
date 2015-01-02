@@ -85,7 +85,7 @@ static ip_list_t ip_list;
 static int parse_ip_list();
 
 static char *chnroute_file = NULL;
-static net_list_t chnroute_list;
+static net_list_t chnroute_list;r
 static int parse_chnroute();
 static int test_ip_in_list(struct in_addr ip, const net_list_t *netlist);
 
@@ -704,8 +704,6 @@ static int should_filter_query(ns_msg msg, struct in_addr dns_addr) {
       }
     }
   }
-  if (rrmax == 1)
-    return -1;
   return 0;
 }
 

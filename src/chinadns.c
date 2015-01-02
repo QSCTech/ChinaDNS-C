@@ -85,7 +85,7 @@ static ip_list_t ip_list;
 static int parse_ip_list();
 
 static char *chnroute_file = NULL;
-static net_list_t chnroute_list;r
+static net_list_t chnroute_list;
 static int parse_chnroute();
 static int test_ip_in_list(struct in_addr ip, const net_list_t *netlist);
 

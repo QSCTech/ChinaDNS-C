@@ -704,6 +704,8 @@ static int should_filter_query(ns_msg msg, struct in_addr dns_addr) {
       }
     }
   }
+  if (rrmax == 1)
+    return -1;
   return 0;
 }
 
